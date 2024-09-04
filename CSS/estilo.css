@@ -1,0 +1,101 @@
+*{margin:0; padding:0;} /*não deixar que os itens da pagina atinjam as extremidas*/
+    
+hr {
+        display:block;/*não permite movimentação da linha*/
+        margin-top:0.5em;/*espaçamento entre o topo da margem*/
+        margin-bottom: 0em;/*espaçamento entre a parte de baixo*/
+        margin-left: auto;
+        margin-right: auto;
+        border-style: inset;/*estilo da borda*/
+        border-width: 1px; /*largura da borda*/
+        border-color: rgb(255, 255, 255);/*cor da borda*/
+       
+    }
+    
+    header img{/*definição da imagem que estão dentro so cabeçalho*/
+        width: 100px;/*largura da imagem*/
+        height: 100px;/*altura da imagem*/
+        margin: 10px;/*margem da imagem*/
+    }
+    
+    header h1{/*defições do titulo que estão dentro do cabeçalho*/
+    color: rgb(255, 255, 255);/*cor do texto*/
+    -webkit-text-stroke:0,5px rgb(255, 255, 255);/*espaçamento entre o topo e o texto*/
+    padding-top: 5px;/*espaçamento entre o topo e o texto*/
+    margin-left: -20px;
+    }
+
+    header h2{/*defições do titulo que estão dentro do cabeçalho*/
+        color: rgb(234, 0, 156);/*cor do texto*/
+        -webkit-text-stroke:0,5p rgb(234, 0, 156);/*espaçamento entre o topo e o texto*/
+        padding-top: 5px;/*espaçamento entre o topo e o texto*/
+        margin-left: -20px;
+    }
+    #menu ul{/*id para lista*/
+    list-style:none ;/*sem nenhum estilo na lista, tira os pontos*/
+    }
+    #menu li a{
+        padding: 10px;
+        color: rgb(250, 208, 250);/*cor do texto no menu*/
+        text-decoration: 200px 300px;/*espaçamento entre os textos no menu*/
+        display: block;  /*opções do menu bloqueadas na posição atual*/
+    }
+    #menu li a:hover{
+        background: #fbf6f6; /*fundo do efeito*/
+        color: #dc08a0; /*cor do texto do fundo*/
+        text-shadow: 0px 0px 5px #e9b1e9;/*sombra do efeito*/
+    }
+    #menu li ul{
+        position: absolute;
+        top: 25px;/*espaçamento do topo*/
+        left: 0;/*espaçamento da esquerda*/
+        background-color: #000000;
+        display: none;
+    }
+    #menu li:hover ul, #menu li.over ul{
+        display: block;/*durante o efeito não moverá o meu*/
+    }
+    header, #menu, #menu ul{
+        display: flex;
+        align-items: center;
+    
+        #menu{
+            flex: 1; /* isto é para a nav ocupar a largura toda menos a logo */
+            justify-content: center; /* alinha horizontalmente */
+            align-items: center; /* alinha verticalmente */
+         }
+         
+    }
+
+    main {
+        background-color: #f4f4f4; /* Cor de fundo da área central */
+        padding: 20px;
+    }
+
+
+    footer hr {
+        margin-top: 0.5px;
+        margin-bottom: 0em;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: inset;
+        border-width: 1px; /*Largura da borda*/
+        border-color: rgb(234, 0, 156); /*Cor da borda*/
+      }
+
+
+        footer h1{
+        color: rgb(255, 255, 255);/*cor do texto*/
+        -webkit-text-stroke:0,5px rgb(0, 0, 0);/*espaçamento entre o topo e o texto*/
+        padding-top: 5px;/*espaçamento entre o topo e o texto*/
+        margin-left: 20px;
+        }
+
+        footer p{
+        color: rgb(255, 255, 255);/*cor do texto*/
+        -webkit-text-stroke:0,5px rgb(0, 0, 0);/*espaçamento entre o topo e o texto*/
+        padding-top: 5px;/*espaçamento entre o topo e o texto*/
+        margin-left: 20px;
+        }
+
+        
